@@ -26,7 +26,7 @@ export default Ember.Object.extend({
   // private
   _add: function(msg, type){
     var flashes, flash;
-    flashes = Ember.get(this, 'queue');
+    flashes = this.get('queue');
     flash   = this._newFlashMessage(msg, type);
     flashes.pushObject(flash);
   },

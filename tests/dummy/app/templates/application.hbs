@@ -1,3 +1,7 @@
 <h2 id='title'>Welcome to Ember.js</h2>
 
-{{outlet}}
+<button {{action 'success'}}>Success</button>
+
+{{#each flash in flashes.content}}
+  {{flash-message flash=flash}}
+{{/each}}
