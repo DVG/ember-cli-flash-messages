@@ -1,25 +1,31 @@
 # Flash-messages
 
-This README outlines the details of collaborating on this Ember addon.
+This addon allows you to manage flash messages in your ember application. The original code for this comes from the blog entry here by Lauren Elizabeth Tan (@sugarpirate): https://medium.com/delightful-ui-for-ember-apps/adding-flash-messages-to-an-ember-app-437b13e49c1b
+
+I'm mostly packaging this up for convenience for myself.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+* `npm install flash-messages --save`
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+### Templates
 
-## Running Tests
+```hbs
+{{#each flash in flashes.content}}
+  {{flash-message flash=flash}}
+{{/each}}
+```
 
-* `ember test`
-* `ember test --server`
+### Controllers
 
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+```javascript
+actions: {
+  postComment: function(){
+    this.get('flashes').success('Comment posted'); 
+    // this.get('flashes').danger('Failed to post comment.');
+    // info and warning are also possibilities
+  } 
+}
+```
