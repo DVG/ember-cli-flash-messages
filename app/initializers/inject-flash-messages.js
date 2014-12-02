@@ -1,4 +1,4 @@
-import flashMessagesService from '../services/flash-service';
+import flashMessagesService from 'flash-messages/services/flash-service';
 
 export function initialize(container, application) {
   application.register('service:flash-messages', flashMessagesService, { singleton: true });
