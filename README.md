@@ -1,4 +1,4 @@
-# Flash-messages
+# Ember CLI Flash-messages
 
 This addon allows you to manage flash messages in your ember application. The original code for this comes from the blog entry here by Lauren Elizabeth Tan (@sugarpirate): https://medium.com/delightful-ui-for-ember-apps/adding-flash-messages-to-an-ember-app-437b13e49c1b
 
