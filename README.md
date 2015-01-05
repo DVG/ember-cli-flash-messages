@@ -6,7 +6,7 @@ I'm mostly packaging this up for convenience for myself.
 
 ## Installation
 
-* `npm install flash-messages --save`
+* `npm install ember-cli-flash-messages --save`
 
 ## Usage
 
@@ -23,9 +23,9 @@ I'm mostly packaging this up for convenience for myself.
 ```javascript
 actions: {
   postComment: function(){
-    this.get('flashes').success('Comment posted'); 
+    this.get('flashes').success('Comment posted');
     // this.get('flashes').danger('Failed to post comment.');
     // info and warning are also possibilities
-  } 
+  }
 }
 ```
